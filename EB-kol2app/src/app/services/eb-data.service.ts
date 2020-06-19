@@ -4,7 +4,7 @@ import {HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class EbDataService {
 
   private url = 'https://kol2tai.herokuapp.com';
 
@@ -18,4 +18,5 @@ export class DataService {
   getById(id) {
     return this.http.get(this.url + '/api/shop/items/' + id);
   }
+
 }

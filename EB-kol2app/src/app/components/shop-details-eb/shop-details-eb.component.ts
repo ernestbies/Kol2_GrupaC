@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from '../../services/data.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import {EbDataService} from "../../services/eb-data.service";
 
 @Component({
   selector: 'shop-details-eb',
@@ -15,7 +15,7 @@ export class ShopDetailsEBComponent implements OnInit {
   public price: number;
   public id: number;
 
-  constructor(private dataService: DataService, private route: ActivatedRoute, private router: Router) {
+  constructor(private dataService: EbDataService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {

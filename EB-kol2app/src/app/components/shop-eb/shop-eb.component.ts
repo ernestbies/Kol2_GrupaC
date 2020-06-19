@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from '../../services/data.service';
-
+import {EbDataService} from "../../services/eb-data.service";
 
 @Component({
   selector: 'shop-eb',
@@ -11,7 +10,7 @@ export class ShopEBComponent implements OnInit {
 
   public items$: any;
 
-  constructor(private service: DataService) { }
+  constructor(private service: EbDataService) { }
 
   ngOnInit(): void {
     this.getAll();
