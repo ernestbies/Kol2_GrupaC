@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem; height: 26rem; margin: 5px; text-align: center">
+  <img class="card-img-top" style="height: 12rem;" src="{{image}}">
+  <div class="card-body">
+    <h6 class="card-title"><a style="font-weight: bold">ID:</a> {{id}}</h6>
+    <h6 class="card-title"><a style="font-weight: bold">Title:</a> {{title}}</h6>
+    <h6 class="card-title"><a style="font-weight: bold">Price:</a> {{price}}</h6>
+    <p class="card-text">{{text | summary: 50}}</p>
+    <a [routerLink]="['/shop/items/', id]" class="btn btn-primary">Wyświetl szczegóły</a>
+  </div>
+</div>

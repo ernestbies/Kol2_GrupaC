@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'EB-kol2app';
+  title = 'Technologie aplikacji internetowych (kolokwium) - Ernest Bieś, PWSZ Tarnów 2020';
 }
